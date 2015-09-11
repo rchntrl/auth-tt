@@ -1,0 +1,85 @@
+
+.user-profile {
+    text-align: left;
+    width: 70%;
+}
+
+.user-profile .main-info {
+    padding-bottom: 10px;
+}
+.user-profile .photo {
+    width: 80px;
+    border: 5px solid #e2e2e2;
+    display: inline-block;
+    float: right;
+}
+
+.user-profile .photo img {
+    width: 100%;
+}
+
+.user-profile dl {
+    margin-bottom: 16px;
+    padding-bottom: 1px;
+    overflow: hidden;
+}
+
+.user-profile dt {
+    float: left;
+    font-size: 13px;
+    color: #666;
+    font-weight: bold;
+    text-align: left;
+    width: 145px;
+}
+
+.user-profile dd {
+    margin-left: 157px;
+    font-size: 13px;
+}
+
+.main-details-section,
+.education-section,
+.work-experience-section{
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.education-section .institution,
+.work-experience-section .work-position {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.action-control {
+
+}
+
+.action-control li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+a .edit,
+a .remove {
+    width: auto;
+    display: inline-block;
+}
+
+a .icon:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+a .edit:before {
+    background-image: url('../images/edit.png');
+}
+a .remove:before {
+    background-image: url('../images/trash.png');
+}

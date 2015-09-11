@@ -1,0 +1,21 @@
+
+# Deny access to IIS configuration
+<Files web.config>
+	Order deny,allow
+	Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+	SetEnv HTTP_MOD_REWRITE On
+	RewriteEngine On
+
+	# Deny access to potentially sensitive files and folders
+	RewriteRule ^vendor(/|$) - [F,L,NC]
+	RewriteRule silverstripe-cache(/|$) - [F,L,NC]
+	RewriteRule composer\.(json|lock) - [F,L,NC]
+
+	# Pass through the original path as a query parameter, and retain the existing parameters.
+	RewriteCond %{REQUEST_URI} ^(.*)$
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule .* app/main.php?url=%1 [QSA]
+</IfModule>

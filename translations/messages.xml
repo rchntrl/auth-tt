@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document>
+    <trans id="this-is-required-field">
+        <source>This is required field.</source>
+        <target lang="ru">Это поле необходимо заполнить</target>
+    </trans>
+    <trans id="enter-valid-email-text-please">
+        <source>Enter valid email address, please.</source>
+        <target lang="ru">Введите, пожалуйста, корректный email адрес.</target>
+    </trans>
+    <trans id="home">
+        <source>Home</source>
+        <target lang="ru">Домой</target>
+    </trans>
+    <trans id="hello-name">
+        <source>Hello %Name%!</source>
+        <target lang="ru">Привет %Name%!</target>
+    </trans>
+    <trans id="my-profile">
+        <source>My profile</source>
+        <target lang="ru">Мой профиль</target>
+    </trans>
+    <trans id="logout">
+        <source>Logout</source>
+        <target lang="ru">Выход</target>
+    </trans>
+    <trans id="name">
+        <source>Name</source>
+        <target lang="ru">Имя</target>
+    </trans>
+    <trans id="email">
+        <source>Email</source>
+        <target lang="ru">Email</target>
+    </trans>
+    <trans id="password">
+        <source>Password</source>
+        <target lang="ru">Пароль</target>
+    </trans>
+    <trans id="leave-blank-if-you-do-not-have-to-change-your-password">
+        <source>Leave blank if you do not have to change your password.</source>
+        <target lang="ru">Оставьте пустым, если не хотите поменять пароль.</target>
+    </trans>
+    <trans id="update">
+        <source>Update</source>
+        <target lang="ru">Обновить</target>
+    </trans>
+    <trans id="main-page">
+        <source>Main page</source>
+        <target lang="ru">Главная страница</target>
+    </trans>
+    <trans id="sign-in">
+        <source>Sign in</source>
+        <target lang="ru">Вход</target>
+    </trans>
+    <trans id="create-account">
+        <source>Create Account</source>
+        <target lang="ru">Создать аккаунт</target>
+    </trans>
+    <trans id="register">
+        <source>Register</source>
+        <target lang="ru">Регистрация</target>
+    </trans>
+    <trans id="the-text-length-is-more-than-length">
+        <source>The text length is more than %length%.</source>
+        <target lang="ru">Длина текста должна быть не больше %length%.</target>
+    </trans>
+    <trans id="english">
+        <source>English</source>
+        <target lang="ru">Английский</target>
+    </trans>
+    <trans id="russian">
+        <source>Russian</source>
+        <target lang="ru">Русский</target>
+    </trans>
+    <trans id="you-already-signed-in-as-name">
+        <source>You already signed in as %Name%</source>
+        <target lang="ru">Вы уже вошли как %Name%</target>
+    </trans>
+    <trans id="image">
+        <source>Image</source>
+        <target lang="ru">Изображение</target>
+    </trans>
+    <trans id="upload-image">
+        <source>Upload Image</source>
+        <target lang="ru">Загрузить изображение</target>
+    </trans>
+    <trans id="remove-image">
+        <source>Remove image</source>
+        <target lang="ru">Удалить изображение</target>
+    </trans>
+    <trans id="file-image-format-is-not-supported">
+        <source>"%file%" - Image format is not supported.</source>
+        <target lang="ru">"%file%" - Формат изображения не подерживается.</target>
+    </trans>
+    <trans id="maximum-file-size-size">
+        <source>Maximum file size - %Size%</source>
+        <target lang="ru">Максимальный размер картинки - %Size%</target>
+    </trans>
+    <trans id="files-larger-than-size-are-not-allowed-to-upload">
+        <source>files larger than %Size% are not allowed to upload.</source>
+        <target lang="ru">Файлы больше %Size% не разрешены для загрузки.</target>
+    </trans>
+    <trans id="internal-server-error">
+        <source>Internal Server Error.</source>
+        <target lang="ru">Внутренняя ошибка сервера.</target>
+    </trans>
+    <trans id="this-email-already-exists">
+        <source>This email already exists.</source>
+        <target lang="ru">Этот email уже существует.</target>
+    </trans>
+    <trans id="password-must-contain-8-characters-and-at-least-one-number-one-letter-and-one-unique-character-such-as-and">
+        <source>Password must contain 8 latin characters and at least one number, one letter and one unique character
+            such as
+            "! # $ % &amp; @".
+        </source>
+        <target lang="ru">Пароль должен содержать 8 латинских символов и по крайней мере одну цифру. одну букву и один
+            уникальный символ из числа "! # $ % &amp; @".
+        </target>
+        <target lang="ru"/>
+    </trans>
+    <trans id="edit-profile">
+        <source>Edit profile</source>
+        <target lang="ru">Редактировать профиль</target>
+    </trans>
+    <trans id="">
+        <source>empty</source>
+        <target lang="ru">empty</target>
+    </trans>
+    <trans id="first-name">
+        <source>First Name</source>
+        <target lang="ru">Имя</target>
+    </trans>
+    <trans id="last-name">
+        <source>Last Name</source>
+        <target lang="ru">Фамилия</target>
+    </trans>
+    <trans id="middle-name">
+        <source>Middle Name</source>
+        <target lang="ru">Отчество</target>
+    </trans>
+    <trans id="birth-date">
+        <source>Birth Date</source>
+        <target lang="ru">Дата рождения</target>
+    </trans>
+    <trans id="location">
+        <source>Location</source>
+        <target lang="ru">Место проживания</target>
+    </trans>
+    <trans id="edit">
+        <source>Edit</source>
+        <target lang="ru">Редактировать</target>
+    </trans>
+    <trans id="work-experience">
+        <source>Work Experience</source>
+        <target lang="ru">Опыт работы</target>
+    </trans>
+    <trans id="add-work">
+        <source>Add Work</source>
+        <target lang="ru">Add Work</target>
+    </trans>
+    <trans id="title">
+        <source>Title</source>
+        <target lang="ru">Звание</target>
+    </trans>
+    <trans id="organization">
+        <source>Organization</source>
+        <target lang="ru">Организация</target>
+    </trans>
+    <trans id="add-position">
+        <source>Add Position</source>
+        <target lang="ru">Добавить место работы</target>
+    </trans>
+    <trans id="description">
+        <source>Description</source>
+        <target lang="ru">Описание</target>
+    </trans>
+    <trans id="login">
+        <source>Login</source>
+        <target lang="ru">Login</target>
+    </trans>
+    <trans id="education">
+        <source>Education</source>
+        <target lang="ru">Образование</target>
+    </trans>
+    <trans id="status">
+        <source>Status</source>
+        <target lang="ru">Статус</target>
+    </trans>
+    <trans id="institution">
+        <source>Institution</source>
+        <target lang="ru">Учебное заведение</target>
+    </trans>
+    <trans id="department">
+        <source>Department</source>
+        <target lang="ru">Факультет</target>
+    </trans>
+    <trans id="study-program">
+        <source>Study Program</source>
+        <target lang="ru">Кафедра</target>
+    </trans>
+    <trans id="add-institution">
+        <source>Add Institution</source>
+        <target lang="ru">Добавить учебное заведение</target>
+    </trans>
+    <trans id="country">
+        <source>Country</source>
+        <target lang="ru">Страна</target>
+    </trans>
+    <trans id="region">
+        <source>Region</source>
+        <target lang="ru">Область</target>
+    </trans>
+    <trans id="city">
+        <source>City</source>
+        <target lang="ru">Город</target>
+    </trans>
+    <trans id="edit-location">
+        <source>Edit location</source>
+        <target lang="ru">Редактировать место проживания</target>
+    </trans>
+    <trans id="edit-position">
+        <source>Edit Position</source>
+        <target lang="ru">Редактировать место работы</target>
+    </trans>
+    <trans id="edit-institution">
+        <source>Edit Institution</source>
+        <target lang="ru">Редактировать учебное заведение</target>
+    </trans>
+    <trans id="not-specified">
+        <source>Not specified</source>
+        <target lang="ru">Не указан</target>
+    </trans>
+    <trans id="specify">
+        <source>Specify</source>
+        <target lang="ru">Указать</target>
+    </trans>
+    <trans id="skype">
+        <source>Skype</source>
+        <target lang="ru">Skype</target>
+    </trans>
+    <trans id="phone">
+        <source>Phone</source>
+        <target lang="ru">Телефон</target>
+    </trans>
+    <trans id="more-about-me">
+        <source>More About Me</source>
+        <target lang="ru">Подробнее о себе</target>
+    </trans>
+    <trans id="relationship-status">
+        <source>Relationship Status</source>
+        <target lang="ru">Личные отношения</target>
+    </trans>
+    <trans id="not-selected">
+        <source>Not selected</source>
+        <target lang="ru">Не выбрано</target>
+    </trans>
+    <trans id="single">
+        <source>Single</source>
+        <target lang="ru">Не женат</target>
+    </trans>
+    <trans id="in-a-relationship">
+        <source>In a relationship</source>
+        <target lang="ru">Встречаюсь</target>
+    </trans>
+    <trans id="engaged">
+        <source>Engaged</source>
+        <target lang="ru">Помолвлен</target>
+    </trans>
+    <trans id="married">
+        <source>Married</source>
+        <target lang="ru">Женат</target>
+    </trans>
+    <trans id="enter-valid-date-please">
+        <source>Enter valid date, please</source>
+        <target lang="ru">Введите правильную дату, пожалуйста</target>
+    </trans>
+    <trans id="remove">
+        <source>Remove</source>
+        <target lang="ru">Удалить</target>
+    </trans>
+    <trans id="save">
+        <source>Save</source>
+        <target lang="ru">Сохранить</target>
+    </trans>
+    <trans id="are-you-sure-you-want-to-remove-this-work-position">
+        <source>Are you sure you want to remove this work position?</source>
+        <target lang="ru">Уверены, что хотите удалить это место работы?</target>
+    </trans>
+    <trans id="are-you-sure-you-want-to-remove-this-institution">
+        <source>Are you sure you want to remove this institution?</source>
+        <target lang="ru">Уверены, что хотите удалить это учебное заведение?</target>
+    </trans>
+    <trans id="january">
+        <source>January</source>
+        <target lang="ru">Январь</target>
+    </trans>
+    <trans id="february">
+        <source>February</source>
+        <target lang="ru">Февраль</target>
+    </trans>
+    <trans id="march">
+        <source>March</source>
+        <target lang="ru">Март</target>
+    </trans>
+    <trans id="april">
+        <source>April</source>
+        <target lang="ru">Апрель</target>
+    </trans>
+    <trans id="may">
+        <source>May</source>
+        <target lang="ru">Май</target>
+    </trans>
+    <trans id="june">
+        <source>june</source>
+        <target lang="ru">Июнь</target>
+    </trans>
+    <trans id="july">
+        <source>July</source>
+        <target lang="ru">Июль</target>
+    </trans>
+    <trans id="august">
+        <source>August</source>
+        <target lang="ru">Август</target>
+    </trans>
+    <trans id="september">
+        <source>September</source>
+        <target lang="ru">Сентябрь</target>
+    </trans>
+    <trans id="october">
+        <source>October</source>
+        <target lang="ru">Октябрь</target>
+    </trans>
+    <trans id="november">
+        <source>November</source>
+        <target lang="ru">November</target>
+    </trans>
+    <trans id="december">
+        <source>December</source>
+        <target lang="ru">Декабрь</target>
+    </trans>
+    <trans id="sorry-saving-went-wrong-try-again">
+        <source>Sorry, saving went wrong... Try again.</source>
+        <target lang="ru">Сожалеем, при сохранении что-то пошло не так... попробуйте снова.</target>
+    </trans>
+    <trans id="your-profile-is-successfully-updated">
+        <source>Your profile is successfully updated.</source>
+        <target lang="ru">Ваш профиль успешно обновлен.</target>
+    </trans>
+    <trans id="your-location-is-successfully-saved">
+        <source>Your location is successfully saved.</source>
+        <target lang="ru">Ваше место проживания успешно сохранено.</target>
+    </trans>
+    <trans id="your-work-position-is-successfully-saved">
+        <source>Your work position is successfully saved.</source>
+        <target lang="ru">Ваше место работы успешно сохранено.</target>
+    </trans>
+    <trans id="your-institution-is-successfully-saved">
+        <source>Your institution is successfully saved.</source>
+        <target lang="ru">Ваше учебное завдение успешно сохранено.</target>
+    </trans>
+    <trans id="save-and-exit">
+        <source>Save and Exit</source>
+        <target lang="ru">Сохранить и выйти</target>
+    </trans>
+    <trans id="your-work-position-is-successfully-added">
+        <source>Your work position is successfully added.</source>
+        <target lang="ru">Ваше место работы успешно добавлено.</target>
+    </trans>
+    <trans id="your-institution-is-successfully-added">
+        <source>Your institution is successfully added.</source>
+        <target lang="ru">Ваше учебное завдение успешно добавлено.</target>
+    </trans>
+    <trans id="click-here-to-edit">
+        <source>Click here to edit.</source>
+        <target lang="ru">Нажмите сюда чтобы редактировать.</target>
+    </trans>
+    <trans id="graduation-year">
+        <source>Graduation year</source>
+        <target lang="ru">Год выпуска</target>
+    </trans>
+    <trans id="enter-valid-number-please">
+        <source>Enter valid number, please</source>
+        <target lang="ru">Введите число правильно, пожалуйста</target>
+    </trans>
+    <trans id="from">
+        <source>From</source>
+        <target lang="ru">От</target>
+    </trans>
+    <trans id="to">
+        <source>To</source>
+        <target lang="ru">До</target>
+    </trans>
+</document>
