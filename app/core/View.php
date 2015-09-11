@@ -79,6 +79,7 @@ class View extends Object
             $this->setLayout($layout);
         }
         include($this->template);
+        exit();
     }
 
     public function trans($text, $data = array())

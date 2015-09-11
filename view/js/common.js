@@ -108,7 +108,7 @@ function uploadImage(id) {
     var formData = new FormData();
     formData.append("file", control.files[0], control.files[0]["name"]);
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", baseUrl + "/upload-file", true);
+    xhr.open("POST", baseUrl + "upload-file", true);
     xhr.contentType = "Content-Type: application/json";
     xhr.onload = function () {
         if (xhr.status === 200) {

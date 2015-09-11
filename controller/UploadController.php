@@ -19,10 +19,10 @@ class UploadController extends  Controller
                 try {
                     $uploadFile = $this->getUploadDir() . $this->getAvailableFileName($fileName);
                     move_uploaded_file($file['tmp_name'], $uploadFile);
-                    $response = array_merge($file, array(
+                    $response = array(
                         'fileUrl' => BASE_URL . '/uploads/' . basename($uploadFile),
                         'fileName' => basename($uploadFile),
-                    ));
+                    );
                 } catch (\Exception $ex) {
                     $response['message'] = $this->trans($this->beautifyError($ex->getMessage()));
                 }

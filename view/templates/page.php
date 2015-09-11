@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <base href="<?=BASE_URL?>"/>
+    <base href="<?=BASE_URL?>/"/>
     <title><?= ($this->title) ?> - <?= $this->siteTitle ?></title>
     <? if ($this->metaDescription) { ?>
         <meta name="description" content="<?= $this->metaDescription ?>" />
