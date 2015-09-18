@@ -73,7 +73,7 @@ $user = $this->user;
                         </li>
                     </ul>
                     <h3 class="title"><?= $position->Title ?></h3>
-                    <div class="Organization"><?= $position->Organization ?></div>
+                    <div><?= $position->Organization ?></div>
                 </div>
             <? } ?>
         </div>
@@ -101,7 +101,7 @@ $user = $this->user;
                         </li>
                     </ul>
                     <h3 class="title"><?= $position->Status ?></h3>
-                    <div class="Organization"><?= $position->Institution ?></div>
+                    <div><?= $position->Institution ?></div>
                 </div>
             <? } ?>
         </div>

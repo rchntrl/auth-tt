@@ -51,7 +51,7 @@ $user = $this->form->getData();
         'form-last-name': {'constraints': ['NotBlank']},
         'form-middle-name': {'constraints': ['NotBlank']},
         'form-email': {'constraints': ['NotBlank', 'Email']},
-        'form-birth-date': {'constraints': ['NotBlank', 'Date']}
+        'form-birth-date': {'constraints': ['NotBlank', 'DateFormat']}
     };
 
     bindFeedbackValidation(inputs);

@@ -1,72 +1,97 @@
 
 var baseUrl = document.getElementsByTagName("base")[0].getAttribute("href");
 
-var Constraint = function (value, constraints) {
-    function notBlank() {
+function Constraint(value) {
+    /**
+     *
+     * @returns {boolean}
+     * @constructor
+     */
+    this.NotBlank = function() {
         return value.length != 0;
-    }
+    };
 
-    function email() {
+    /**
+     *
+     * @returns {*}
+     * @constructor
+     */
+    this.Email = function() {
+        if (!value) return true;
         return /^(([a-zA-Z]|[0-9])|([-]|[_]|[.]))+[@](([a-zA-Z0-9])|([-])){2,63}[.](([a-zA-Z0-9]){2,63})+$/i.exec(value);
-    }
+    };
 
-    function date() {
+    /**
+     *
+     * @returns {*}
+     * @constructor
+     */
+    this.DateFormat = function() {
         if (!value) return true;
         return /^(?:(?:31(-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/.exec(value);
-    }
-    function numeric() {
+    };
+
+    /**
+     *
+     * @returns {boolean}
+     * @constructor
+     */
+    this.Numeric = function() {
         if (!value) return true;
         return !isNaN(parseFloat(value)) && isFinite(value);
-    }
-    function password() {
+    };
+
+    /**
+     *
+     * @returns {*}
+     * @constructor
+     */
+    this.Password = function() {
         if (!value) return true;
         return /^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d)(?=.*[!#$%&@? "]).*$/.exec(value);
-    }
+    };
+}
 
-    function validate () {
+function RequiredField(id, constraints) {
+    this.element = document.getElementById(id);
+    var value;
+    if (this.element) {
+        value = this.element.value
+    }
+    var validators = new Constraint(value);
+
+    /**
+     *
+     * @returns {boolean}
+     * @constructor
+     */
+    this.IsValid = function() {
+        var func;
         for (var key in constraints) {
             func  = constraints[key];
             try {
-                if (!this[func]()) {
+                if (!validators[func]()) {
                     return false;
                 }
             } catch (err) {
-                console.log(err, constraints, key);
+                console.log(err);
             }
         }
         return true;
-    }
-
-    return {
-        Date: date,
-        Email: email,
-        Numeric: numeric,
-        NotBlank: notBlank,
-        Password: password,
-        IsValid: validate
-    }
-};
-
-var RequiredField = function(id, constraints) {
-    var element = document.getElementById(id);
-    return {
-        element: element,
-        constraints: constraints
-    }
-};
+    };
+}
 
 /**
  * @param input RequiredField
  */
 function validateField(input) {
-    var c = new Constraint(input.element.value, input.constraints);
     var parent = input.element.parentNode;
-    if (c.IsValid()) {
-        removeClass(parent , 'has-errors');
+    if (input.IsValid()) {
+        removeClass(parent , "has-errors");
         if (input.element.value) {
-            addClass(parent, 'has-success');
+            addClass(parent, "has-success");
         } else {
-            removeClass(parent, 'has-success');
+            removeClass(parent, "has-success");
         }
         // remove error messages
         for (var i = 0; i < parent.childNodes.length; i++) {
@@ -75,20 +100,24 @@ function validateField(input) {
             }
         }
     } else {
-        removeClass(parent, 'has-success');
-        addClass(parent, 'has-errors');
+        removeClass(parent, "has-success");
+        addClass(parent, "has-errors");
     }
 }
 
+/**
+ *
+ * @param inputs Object
+ */
 function bindFeedbackValidation(inputs) {
     for (var key in inputs) {
         document.getElementById(key).addEventListener("keyup", function(e) {
-            var id = e.target.getAttribute('id');
-            validateField(new RequiredField(id, inputs[id]['constraints']));
+            var id = e.target.getAttribute("id");
+            validateField(new RequiredField(id, inputs[id]["constraints"]));
         }, false);
         document.getElementById(key).addEventListener("change", function(e) {
-            var id = e.target.getAttribute('id');
-            validateField(new RequiredField(id, inputs[id]['constraints']));
+            var id = e.target.getAttribute("id");
+            validateField(new RequiredField(id, inputs[id]["constraints"]));
         }, false);
     }
 }
@@ -123,15 +152,15 @@ function uploadImage(id) {
             removeClass(container, "empty-image");
             removeClass(container, "has-errors");
         } else {
-            addClass(container, 'has-errors');
-            uploadErrorMessage(id, 'Internal server error.');
+            addClass(container, "has-errors");
+            uploadErrorMessage(id, "Internal server error.");
         }
     };
     xhr.send(formData);
 }
 
 function uploadErrorMessage(id, message) {
-    document.getElementById(id + '-error-message').innerHTML = message;
+    document.getElementById(id + "-error-message").innerHTML = message;
 }
 
 function removeImage(id) {

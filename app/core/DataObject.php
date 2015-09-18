@@ -19,6 +19,7 @@ class DataObject extends Object implements JsonSerializable
     protected static $has_one = null;
     protected static $belongs_to = null;
     protected static $sort = null;
+
     /**
      * Will be used to update changed fields. See DB class
      *

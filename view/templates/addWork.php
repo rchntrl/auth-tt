@@ -29,7 +29,7 @@ include 'include/form-macro.php';
                     <?=$formWidget('form-end-year', 'EndDateYear')?>
                 </div>
             </div>
-            <?=$formTextAreaRow('form-description', 'Description', 'Description', true)?>
+            <?=$formTextAreaRow('form-description', 'Description', 'Description')?>
             <div class="item title right">
                 <button type="submit" name="submit"><?=$this->trans('Save')?></button>
                 <button type="submit" name="SaveAndExit" value="1"><?=$this->trans('Save and Exit')?></button>

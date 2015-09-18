@@ -47,7 +47,7 @@ include 'include/form-macro.php';
             'form-last-name': {'constraints': ['NotBlank']},
             'form-middle-name': {'constraints': ['NotBlank']},
             'form-email': {'constraints': ['NotBlank', 'Email']},
-            'form-birth-date': {'constraints': ['NotBlank', 'Date']},
+            'form-birth-date': {'constraints': ['NotBlank', 'DateFormat']},
             'form-password': {'constraints': ['NotBlank', 'Password']}
         };
         bindFeedbackValidation(inputs);
